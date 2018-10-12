@@ -1,0 +1,73 @@
+:root{
+  --button:hsl(163, 95%, 43%);
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+}
+main{
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container{
+  margin: 0 5em;
+  height: 100vh;
+
+}
+figure{
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.user{
+  width: 12em;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.sign-up{
+  padding: 1em 1.5em;
+}
+.button{
+  background-color: var(--button);
+  border-radius: .2em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.logo-fylo{
+  width: 10em;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text > *{
+  margin: 0;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45vh;
+  width: 36vw;
+}
+.get-hero{
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  width: 12em;
+  font-weight: 700;
+}
