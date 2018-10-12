@@ -87,21 +87,13 @@ a{
   width: 35em;
 }
 .caracteristicas p{
-  /* margin: 0 3em; */
+  font-weight: bold;
+  padding: 0 7em;
+  text-align: center;
 }
 .caracteristicas .img{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   justify-items: center;
-}
-.img div{
-  display: grid;
-  width: 100%;
-  justify-items: center;
-  font-weight: bold;
-}
-.img div img{
-  /* object-fit: contain;
-  margin: 1em; */
 }
