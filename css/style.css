@@ -137,3 +137,20 @@ a{
   width: 10em;
   /* display: block; */
 }
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.start p{
+  text-align: center;
+  width: 55vw;
+}
+.button-start{
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  width: 13em;
+}
