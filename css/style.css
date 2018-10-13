@@ -10,6 +10,7 @@ h1{
   font-family: 'Raleway', sans-serif;
 }
 h2{
+  font-family: 'Raleway', sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
@@ -105,13 +106,17 @@ a{
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 4em;
+}
+.text-apps{
+  width: 35vw;
 }
 .apps-grid{
   display: flex;
 }
 .col{
-  width: 15em;
+  width: 13em;
 }
 .col.bottom{
   position: relative;
@@ -119,11 +124,12 @@ a{
 }
 .apps .grid{
   display: grid;
-  grid-template-rows: 7em 8em;
+  grid-template-rows: 7em 1fr;
   grid-gap: 3px;
   margin: .6em .3em;
 }
 .grid div{
+  padding: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
@@ -135,11 +141,11 @@ a{
 }
 .grid .text > *{
   margin: 0;
+  font-size: .9em;
   text-align: center;
 }
 .apps img{
-  width: 10em;
-  /* display: block; */
+  width: 9em;
 }
 .start{
   display: flex;
