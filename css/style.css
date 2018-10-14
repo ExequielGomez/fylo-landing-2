@@ -24,8 +24,6 @@ main{
 }
 .container{
   margin: 0 5em;
-  height: 100vh;
-
 }
 figure{
   margin: 0;
@@ -60,6 +58,7 @@ a{
 }
 .hero{
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 }
@@ -112,6 +111,9 @@ a{
   width: 35em;
   padding-top: 6em;
 }
+.caracteristicas .text p{
+  margin: 3em 0;
+}
 .caracteristicas p{
   font-weight: bold;
   padding: 0 7em;
@@ -119,10 +121,29 @@ a{
 }
 .caracteristicas .img{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-areas: "img-dev img-sec img-coll" "p-dev p-sec p-coll";
   width: 100%;
   justify-items: center;
   padding-bottom: 6em;
+}
+.img-dev{
+  grid-area: img-dev;
+}
+.img-sec{
+  grid-area: img-sec;
+}
+.img-coll{
+  grid-area: img-coll;
+}
+.p-dev{
+  grid-area: p-dev;
+}
+.p-sec{
+  grid-area: p-sec;
+}
+.p-coll{
+  grid-area: p-coll;
 }
 .apps{
   height: 100vh;
@@ -263,4 +284,35 @@ footer nav{
 .list li{
   list-style: none;
   margin: 1em 0;
+}
+
+@media screen and (max-width:1000px) {
+  main{
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container{
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .hero .text{
+    margin-top: 3em;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    max-width: 60vw;
+  }
+  .get-hero{
+    width: 80%;
+  }
+  .caracteristicas .img{
+    grid-template-columns: 1fr;
+    grid-template-areas: "img-dev" "p-dev" "img-sec" "p-sec" "img-coll" "p-coll";
+  }
+  .caracteristicas{
+    justify-content: center;
+  }
 }
