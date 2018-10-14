@@ -75,7 +75,7 @@ a{
   width: 36vw;
 }
 .hero p{
-  margin: 2em 0;
+  margin: 2em 0 !important;
 }
 .get-hero{
   padding: 1em;
