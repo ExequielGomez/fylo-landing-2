@@ -376,6 +376,16 @@ footer nav{
     flex-direction: column;
     justify-content: center;
   }
+  header figure{
+    width: 30%
+  }
+  .logo-fylo{
+    width: 100%
+  }
+  .user{
+    max-width: 50%;
+    font-size: .8em;
+  }
   .hero{
     margin: 5em 0;
   }
