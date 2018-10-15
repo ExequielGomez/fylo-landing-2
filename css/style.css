@@ -346,6 +346,9 @@ footer nav{
     width: auto;
     display: block;
   }
+  footer section p{
+    font-weight: normal;
+  }
   footer form{
     display: block;
   }
@@ -389,9 +392,15 @@ footer nav{
   .caracteristicas .img{
     padding: 0;
   }
+  footer{
+    display: block;
+  }
   footer .container{
     width: 90vw;
-    margin: 10%;
+    margin: 0 10%;
+  }
+  footer section{
+    width: 90%;
   }
 
 }
