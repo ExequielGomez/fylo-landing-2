@@ -86,9 +86,9 @@ a{
 .background-caract{
   background-color: var(--back-caract);
   position: absolute;
-  top: 130vh;
-  height: 100vh;
-  width: 100vw;
+  /* top: 130vh; */
+  height: 120%;
+  width: 140%;
   transform: rotate(0deg) skewX(-28deg) skewY(15deg);
   z-index: -1;
   border-radius: 5em;
@@ -103,8 +103,6 @@ a{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 70vh;
-
 }
 .caracteristicas .text{
   text-align: center;
@@ -156,7 +154,7 @@ a{
   background: white;
 }
 .text-apps{
-  width: 35vw;
+  width: 30vw;
 }
 .apps-grid{
   display: flex;
@@ -196,13 +194,17 @@ a{
 .start{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
+  text-align: center;
+}
+.start div{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
 }
 .start p{
-  text-align: center;
-  width: 55vw;
 }
 .button-start{
   font-weight: bold;
@@ -291,9 +293,10 @@ footer nav{
     background-image: url("../images/bg-intro-mobile.svg");
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 70%;
   }
   .container{
+    margin: 0 10%;
   }
   .hero{
     flex-direction: column-reverse;
@@ -303,7 +306,7 @@ footer nav{
     text-align: center;
     align-items: center;
     width: auto;
-    max-width: 60vw;
+    max-width: 90vw;
   }
   .get-hero{
     width: 80%;
@@ -315,4 +318,80 @@ footer nav{
   .caracteristicas{
     justify-content: center;
   }
+  .caracteristicas .text{
+    width: auto;
+  }
+  .apps{
+    flex-direction: column;
+    height: inherit;
+  }
+  .apps .text-apps{
+    width: auto;
+    max-width: 60vw;
+    text-align: center;
+  }
+  .apps-grid{
+    flex-direction: column;
+  }
+  .apps .grid{
+    margin-bottom: 1.3em;
+  }
+  .apps .col{
+    bottom: 0;
+  }
+  .button-start{
+    width: 70%;
+  }
+  footer .container{
+    width: auto;
+    display: block;
+  }
+  footer form{
+    display: block;
+  }
+  footer form input{
+    width: 100%;
+  }
+  .button.join{
+    width: 35%;
+    position: relative;
+    float: right;
+  }
+  .contact{
+    margin: 3em 0;
+  }
+  footer nav{
+    display: block;
+  }
+  footer .list{
+    margin: 5em 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero{
+    margin: 5em 0;
+  }
+  .hero img{
+    max-width: 50vw;
+  }
+  .caracteristicas{
+    height: auto;
+    margin: 10em 0;
+  }
+  .caracteristicas p{
+    padding: 0 3em;
+  }
+  .caracteristicas .img{
+    padding: 0;
+  }
+  footer .container{
+    width: 90vw;
+    margin: 10%;
+  }
+
 }
